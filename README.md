@@ -14,6 +14,6 @@ Then to get started, go to the `/app` directory and run `yarn start`
 
 ## Technology Stack
 
-- [Postgraphile]()
+- [Postgraphile](https://www.graphile.org)
 - [Apollo Client](https://github.com/apollographql/apollo-client)
 - [React Apollo](https://github.com/apollographql/react-apollo)
