@@ -17,8 +17,8 @@ a recent version of Node.
 
 ### Get started
 
-Web - go to the `/app` directory and run `yarn start`
-Server - go to `/server` and run `yarn start`
+**Web** - go to the `/app` directory and run `yarn start`<br/>
+**Server** - go to `/server` and run `yarn start`
 
 ## Technology Stack
 
