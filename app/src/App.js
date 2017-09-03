@@ -19,7 +19,7 @@ class App extends Component {
           Hi! This component has some data being loaded from GraphQL:
         </p>
         <pre>
-          {this.props.data.allUsers.edges.map((user, i) => <p>Name: {user.node.name}</p>)}
+          {this.props.data.allUsers.edges.map((user, i) => <p key={i}>Name: {user.node.name}</p>)}
         </pre>
       </div>
     )
