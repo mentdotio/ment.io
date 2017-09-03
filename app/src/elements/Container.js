@@ -1,0 +1,1 @@
+// A wrapper component that receives children and maintains page margins

@@ -1,0 +1,1 @@
+// An controled React component
