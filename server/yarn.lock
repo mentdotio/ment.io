@@ -436,7 +436,7 @@ pluralize@^5.0.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-5.1.0.tgz#586a3944a76c481f89774f755652779f61d692b2"
 
-postgraphile-core@^0.1.0-alpha.24:
+postgraphile-core@^0.1.0-alpha.27:
   version "0.1.0-alpha.27"
   resolved "https://registry.yarnpkg.com/postgraphile-core/-/postgraphile-core-0.1.0-alpha.27.tgz#39656c0dd7cd490248111f0e52f863e00e6f41b1"
   dependencies:
@@ -444,9 +444,9 @@ postgraphile-core@^0.1.0-alpha.24:
     graphile-build "^0.1.0-alpha.27"
     graphile-build-pg "^0.1.0-alpha.27"
 
-postgraphile@^4.0.0-alpha2.12:
-  version "4.0.0-alpha2.12"
-  resolved "https://registry.yarnpkg.com/postgraphile/-/postgraphile-4.0.0-alpha2.12.tgz#63abcdb80c4efd40be7430b4befc1377472fa273"
+postgraphql@next:
+  version "4.0.0-alpha2.15"
+  resolved "https://registry.yarnpkg.com/postgraphql/-/postgraphql-4.0.0-alpha2.15.tgz#c751d0e84786c85b503f1bfa5110020e9ff5654f"
   dependencies:
     body-parser "^1.15.2"
     chalk "1.1.3"
@@ -464,7 +464,7 @@ postgraphile@^4.0.0-alpha2.12:
     pg-minify "~0.5.3"
     pg-sql2 "^1.0.0-alpha1.0"
     pluralize "^3.0.0"
-    postgraphile-core "^0.1.0-alpha.24"
+    postgraphile-core "^0.1.0-alpha.27"
     postgres-interval "^1.0.2"
     send "^0.14.1"
     tslib "^1.5.0"

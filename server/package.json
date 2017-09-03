@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/mentdotio/ment.io#readme",
   "dependencies": {
-    "postgraphile": "^4.0.0-alpha2.12"
+    "postgraphql": "next"
   }
 }
