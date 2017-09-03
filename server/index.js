@@ -5,17 +5,19 @@ http.createServer(
   postgraphql(
       {
           user: 'postgres',
-          host: 'postgres://postgres@localhost',
+          host: 'localhost',
           database: 'mentio_development',
-          password: '',
-          port: 4569
+          // password: '',
+          port: 5432
       },
       'public',
       {
+          // jwtSecret: null,
           graphiql: true,
           watchPg: true,
           showErrorStack: true,
-          extendedErrors: ['hint', 'detail', 'errcode']
+          extendedErrors: ['hint', 'detail', 'errcode'],
+          enableCors: true
       }
   )
 ).listen(5000)

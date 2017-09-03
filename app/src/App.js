@@ -16,11 +16,11 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
-          Hi! This component has some data being loaded from GraphQL:<br /><br />
-          <pre>
-            {this.props.data.allUsers.edges.map((user, i) => <p>Name: {user.node.name}</p>)}
-          </pre>
+          Hi! This component has some data being loaded from GraphQL:
         </p>
+        <pre>
+          {this.props.data.allUsers.edges.map((user, i) => <p>Name: {user.node.name}</p>)}
+        </pre>
       </div>
     )
   }
