@@ -4,7 +4,8 @@ export const createMentorship = gql`
   mutation {
     createMentorship(input: {
       mentorship: {
-        subjectId: "314ebf89-b463-4a70-812e-9222e797cfb8"
+        subjectId: "199bfcda-eae2-4b9b-8cbc-e02520b426f6",
+        userId: "03cb6404-bd2d-4532-afab-fa72abe17a28"
       }
     })
   }
