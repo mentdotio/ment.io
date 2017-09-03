@@ -10,8 +10,18 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker'
 
 const networkInterface = createNetworkInterface({
-  uri: 'localhost:3001/graphql'
+    uri: 'http://localhost:5000/graphql'
 })
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const client = new ApolloClient({
+    networkInterface,
+    dataIdFromObject: o => o.id,
+    connectToDevTools: true // process.env.NODE_ENV === 'development'
+})
+
+ReactDOM.render(
+    <ApolloProvider client={client}>
+        <App />
+    </ApolloProvider>
+    , document.getElementById('root'));
 registerServiceWorker();

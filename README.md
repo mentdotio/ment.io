@@ -11,6 +11,7 @@ you're free to use either! However, you'll use NPM to install Yarn (of course..)
 - [Node](https://nodejs.org) (version > 8.2 for best results)
 - Postgres (version > 9.5; we recommend using the [Postgres App](http://postgresapp.com/))
 - [Yarn](https://yarnpkg.com)/[NPM](https://www.npmjs.com)
+- [Nodemon](https://github.com/remy/nodemon) -- when developing, monitor filesystem for changes
 
 The web app was bootstrapped using [create-react-app], but you won't need that to run it---only
 a recent version of Node.
@@ -18,7 +19,7 @@ a recent version of Node.
 ### Get started
 
 **Web** - go to the `/app` directory and run `yarn start`<br/>
-**Server** - go to `/server` and run `yarn start`
+**Server** - go to `/server` and run `yarn dev`
 
 ## Technology Stack
 

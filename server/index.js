@@ -1,9 +1,18 @@
 const http = require('http')
-const { postgraphile } = require('postgraphile')
+const postgraphile = require('postgraphile').postgraphile
+
+console.log('postgraphile: ', postgraphile);
 
 http.createServer(
   postgraphile(
-      process.env.DATABASE_URL || 'postgres://localhost/',
+      {
+          user: 'postgres',
+          host: 'postgres://localhost',
+          database: 'mentio_development',
+          password: '',
+          port: 4569,
+      },
+      'public',
       {
           graphiql: true,
           watchPg: true,
@@ -11,4 +20,4 @@ http.createServer(
           extendedErrors: ['hint', 'detail', 'errcode']
       }
   )
-).listen(process.env.PORT || 3001)
+).listen(8080)
