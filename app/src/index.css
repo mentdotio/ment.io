@@ -1,5 +1,20 @@
+html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background-color: black;
   font-family: sans-serif;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: 'Neon';
+  src: local(Neon), url(./fonts/neon.ttf) format('woff');
 }
