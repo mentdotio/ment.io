@@ -23,7 +23,7 @@ To **run** a migration:
 migrate -database postgres://localhost:5432/mentio_development?sslmode=disable -path ./ up 1
 ```
 
-The argument following "up" tell `migrate` how many migrations to run.
+The argument following "up" tells `migrate` how many migrations to run.
 
 ### Local development
 After migrations are up to date, spin up a local GraphQL server by running:
