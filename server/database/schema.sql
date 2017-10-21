@@ -15,13 +15,13 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- Name: mentio_development; Type: DATABASE; Schema: -; Owner: dm
+-- Name: mentio_development; Type: DATABASE; Schema: -; Owner: postgres
 --
 
 CREATE DATABASE mentio_development WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'en_US.UTF-8' LC_CTYPE = 'en_US.UTF-8';
 
 
-ALTER DATABASE mentio_development OWNER TO dm;
+ALTER DATABASE mentio_development OWNER TO postgres;
 
 \connect mentio_development
 
@@ -44,28 +44,28 @@ CREATE SCHEMA postgraphql_watch;
 ALTER SCHEMA postgraphql_watch OWNER TO postgres;
 
 --
--- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner:
 --
 
 CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
 
 
 --
--- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner:
 --
 
 COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
 
 
 --
--- Name: pgcrypto; Type: EXTENSION; Schema: -; Owner: 
+-- Name: pgcrypto; Type: EXTENSION; Schema: -; Owner:
 --
 
 CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA public;
 
 
 --
--- Name: EXTENSION pgcrypto; Type: COMMENT; Schema: -; Owner: 
+-- Name: EXTENSION pgcrypto; Type: COMMENT; Schema: -; Owner:
 --
 
 COMMENT ON EXTENSION pgcrypto IS 'cryptographic functions';
@@ -126,7 +126,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: menteeships; Type: TABLE; Schema: public; Owner: dm
+-- Name: menteeships; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE menteeships (
@@ -136,10 +136,10 @@ CREATE TABLE menteeships (
 );
 
 
-ALTER TABLE menteeships OWNER TO dm;
+ALTER TABLE menteeships OWNER TO postgres;
 
 --
--- Name: mentorships; Type: TABLE; Schema: public; Owner: dm
+-- Name: mentorships; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE mentorships (
@@ -149,10 +149,10 @@ CREATE TABLE mentorships (
 );
 
 
-ALTER TABLE mentorships OWNER TO dm;
+ALTER TABLE mentorships OWNER TO postgres;
 
 --
--- Name: schema_migrations; Type: TABLE; Schema: public; Owner: dm
+-- Name: schema_migrations; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE schema_migrations (
@@ -161,10 +161,10 @@ CREATE TABLE schema_migrations (
 );
 
 
-ALTER TABLE schema_migrations OWNER TO dm;
+ALTER TABLE schema_migrations OWNER TO postgres;
 
 --
--- Name: subjects; Type: TABLE; Schema: public; Owner: dm
+-- Name: subjects; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE subjects (
@@ -173,10 +173,10 @@ CREATE TABLE subjects (
 );
 
 
-ALTER TABLE subjects OWNER TO dm;
+ALTER TABLE subjects OWNER TO postgres;
 
 --
--- Name: users; Type: TABLE; Schema: public; Owner: dm
+-- Name: users; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE users (
@@ -185,10 +185,10 @@ CREATE TABLE users (
 );
 
 
-ALTER TABLE users OWNER TO dm;
+ALTER TABLE users OWNER TO postgres;
 
 --
--- Name: menteeships menteeships_pkey; Type: CONSTRAINT; Schema: public; Owner: dm
+-- Name: menteeships menteeships_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY menteeships
@@ -196,7 +196,7 @@ ALTER TABLE ONLY menteeships
 
 
 --
--- Name: mentorships mentorships_pkey; Type: CONSTRAINT; Schema: public; Owner: dm
+-- Name: mentorships mentorships_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY mentorships
@@ -204,7 +204,7 @@ ALTER TABLE ONLY mentorships
 
 
 --
--- Name: schema_migrations schema_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: dm
+-- Name: schema_migrations schema_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY schema_migrations
@@ -212,7 +212,7 @@ ALTER TABLE ONLY schema_migrations
 
 
 --
--- Name: subjects subjects_pkey; Type: CONSTRAINT; Schema: public; Owner: dm
+-- Name: subjects subjects_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY subjects
@@ -220,7 +220,7 @@ ALTER TABLE ONLY subjects
 
 
 --
--- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: dm
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY users
@@ -228,7 +228,7 @@ ALTER TABLE ONLY users
 
 
 --
--- Name: menteeships menteeships_subject_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: dm
+-- Name: menteeships menteeships_subject_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY menteeships
@@ -236,7 +236,7 @@ ALTER TABLE ONLY menteeships
 
 
 --
--- Name: menteeships menteeships_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: dm
+-- Name: menteeships menteeships_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY menteeships
@@ -244,7 +244,7 @@ ALTER TABLE ONLY menteeships
 
 
 --
--- Name: mentorships mentorships_subject_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: dm
+-- Name: mentorships mentorships_subject_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY mentorships
@@ -252,7 +252,7 @@ ALTER TABLE ONLY mentorships
 
 
 --
--- Name: mentorships mentorships_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: dm
+-- Name: mentorships mentorships_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY mentorships
