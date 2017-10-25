@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start-js": "react-scripts start",
+    "build-all": "yarn add npm-run-all --dev"
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
