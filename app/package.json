@@ -1,24 +1,26 @@
 {
-  "name": "ment.io-client",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "apollo-client": "^1.9.2",
-    "graphql-tag": "^2.4.2",
-    "react": "^15.6.1",
-    "react-apollo": "^1.4.15",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.12"
-  },
-  "scripts": {
-    "start-js": "react-scripts start",
-    "build-all": "yarn add npm-run-all --dev"
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
-  }
+    "name": "ment.io-client",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "apollo-client": "^1.9.2",
+        "graphql-tag": "^2.4.2",
+        "react": "^15.6.1",
+        "react-apollo": "^1.4.15",
+        "react-dom": "^15.6.1",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "1.0.12"
+    },
+    "scripts": {
+        "start-js": "react-scripts start",
+        "start": "npm-run-all -p watch-css start-js",
+        "build": "npm run build-css && react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+        "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
+    },
+    "devDependencies": {
+        "npm-run-all": "4.1.1"
+    }
 }
