@@ -5,11 +5,12 @@
     "dependencies": {
         "apollo-client": "^1.9.2",
         "graphql-tag": "^2.4.2",
-        "react": "^15.6.1",
+        "react": "^16.0.0",
         "react-apollo": "^1.4.15",
-        "react-dom": "^15.6.1",
+        "react-dom": "^16.0.0",
         "react-router-dom": "^4.2.2",
-        "react-scripts": "1.0.12"
+        "react-scripts": "1.0.12",
+        "redux": "3.7.2"
     },
     "scripts": {
         "start-js": "react-scripts start",
